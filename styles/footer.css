@@ -1,0 +1,18 @@
+.footer {
+    background-color: black;
+    color: #cbcbcb;
+    font-family: "Ubuntu Condensed", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    margin-top: -4px;
+}
+
+
+.footer > .copyright-wrapper {
+    margin-bottom: 42px;
+    font-size: 1.2em;
+    color: #858585;
+}

@@ -1,0 +1,61 @@
+.header {
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    background-color: #fff;
+}
+
+.header > .header-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: no-repeat;
+    background-size: cover;/*ajusta el tamaño de fondo */
+    filter: brightness(50%);
+    z-index: 1; /* Coloca la imagen de fondo detrás */
+}
+
+.header > .header-content {
+    position: relative;
+    width: 100%; /* Asegura que el contenido se ajuste correctamente */
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2; /* Coloca el contenido por encima del fondo */
+    padding: 0 20px; /* Espacio alrededor del contenido */
+}
+
+.header >.header-content > .perfil-wrapper {
+    background-color: #bfbcb7;
+    color: #11122b;
+    font-family: "Ubuntu Condensed", sans-serif;
+    border-radius: 10px;
+    width: 250px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.perfil-wrapper-text {
+    margin-right: 10px;
+    line-height: 0%;
+}
+
+.img-perfil img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+
+

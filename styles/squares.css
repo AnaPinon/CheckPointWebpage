@@ -1,0 +1,33 @@
+/* square grid styles */
+
+.squares-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.squares-wrapper > .squares {
+    width: 1000px;
+}
+
+/* aqui utilizamos Grid para organizar el contenido en dos columnas iguales; como entre los cuadrantes quedaba 
+el espacio que htlm deja por defecto de margen, le pone un margen de -4px para que se queden pegados */
+
+.squares-wrapper > .squares > .square {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    margin-top: 30px;
+}
+
+/* Ahora le damos el estilo a la imagen, como sólo lo utilizará en esta situación no le va
+a poner toda la cadena de " .squares-wrapper > .squares > .square > img-wrapper img " y lo deja
+en "square > img-wraper img */
+
+.square > .img-wrapper img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /* The replaced content is sized to maintain its aspect ratio while filling the element's entire content box: 
+    its concrete object size is resolved as a cover constraint against the element's used width and height. */
+}
+
+

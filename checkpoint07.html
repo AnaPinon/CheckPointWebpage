@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckPoint7</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/links.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/texto.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-bg" style="background-image: url(imagenes/checkpointbackground.jpg);"></div>
+        <div class="header-content">
+            <div class="perfil-wrapper">
+                <div class="perfil-wrapper-text">
+                    <h4>Ana Piñon</h4>
+                    <div class="github">
+                        <a href="https://www.github.com/AnaPinon?tab=repositories">GitHub</a>
+                    </div>
+                </div>
+                <div class="img-perfil">
+                    <img src="imagenes/fotoPerfil01.jpg" alt="fotoperfil">
+                </div>
+            </div>
+            <div class="links-wrapper">
+                <div class="nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link">
+                    <a href="contacto.html">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Botones de enlace-->
+
+    <div class="button-container">
+        <a href="#parte-teorica">Ejercicio Teórico</a>
+        <a href="ejercicio.js">Ejercicio Práctico</a>
+    </div>
+    
+    <!-- Iniciamos el texto-->
+<div class="page-container">
+    <h1>Preguntas de Programación en JavaScript</h1>
+
+    <h2 id="parte-teorica">1. ¿Qué diferencia a JavaScript de otros lenguajes de programación?</h2> <!-- Primera Pregunta-->
+    <p>JavaScript es un lenguaje de programación versatil e interpretado, que se utiliza principalmente en el desarrollo web. Algunas de las características que lo diferencian de otros lenguajes son:</p>
+    <ul>
+        <li><code>Entorno de ejecución</code>: JavaScript se ejecuta directamente en el navegador web del usuario, sin necesidad de compilación previa.</li><br>
+        <li><code>Interpretación vs. Compilación</code>: Es un lenguaje <b>interpretado</b>, lo que significa que el código se lee y ejecuta línea a línea por el navegador, en lugar de compilarse a un archivo ejecutable.</li><br>
+        <li><code>Tipado</code>: JavaScript tiene un <b>tipado dinámico</b>, lo que significa que no es necesario declarar el tipo de dato de las variables antes de usarlas.</li><br>
+        <li><code>Modelo de ejecución</code>: JavaScript funciona con un <b>modelo basado en eventos</b>, lo que le permite manejar interacciones con el usuario y tareas asícronas de manera eficiente.</li><br>
+        <li><code>Herencia</code>: JavaScript utiliza un sistema de <b>herencia basado en prototipos</b>, en lugar de clases como en otros lenguajes.</li><br>
+    </ul>
+    <p>En resumen, JavaScript es ideal para crear páginas web interactivas y dinámicas, gracias a su facilidad de uso, versatilidad y capacidad para interactuar con el</p>
+    
+    <h2>2. ¿Cuáles son algunos tipos de datos en JavaScript?</h2><!-- segunda pregunta-->
+    <p>En JavaScript, existen diferentes tipos de datos para representar información. Cada tipo de dato tiene características y usos específicos. Los tipos de datos básicos en JavaScript son:</p>
+    <ul>
+        <li><code>Number</code>: Representa tanto números enteros como de punto flotante. Ejemplo: <code>42</code>, <code>3.14</code></li><br>
+        <li><code>String</code>: Representa secuencias de caracteres. Ejemplo: <code>"Hola, mundo"</code></li><br>
+        <li><code>Boolean</code>: Representa valores lógicos <code>true</code> o <code>false</code>.</li><br>
+        <li><code>Object</code>: Colección de propiedades. Ejemplo: <code>{ nombre: "Juan", edad: 30 }</code></li><br>
+        <li><code>Array</code>: Colección ordenada de elementos. Ejemplo: <code>[1, 2, 3, 4]</code></li><br>
+        <li><code>undefined</code>: Representa una variable que ha sido declarada pero no asignada.</li><br>
+        <li><code>null</code>: Representa la ausencia intencional de cualquier valor de objeto.</li><br>
+    </ul>
+
+    <h2>3. ¿Cuáles son las tres funciones de String en JavaScript?</h2> <!-- Tercera pregunta-->
+    <p>JavaScript proporciona una gran variedad de métodos para manipular cadenas de texto (strings). Algunas funciones comunes:</p>
+    <ul>
+        <li><code>length</code>: Devuelve la longitud de la cadena. Ejemplo: <code>"Hola".length</code> devuelve <code>4</code>.</li><br>
+        <li><code>split(separator, limit)</code>: Divide una cadena en un array de subcadenas, utilizando un delimitador específico. Ejemplo: <code>"Hola, mundo".split(", ")</code> devuelve <code>['Hola', 'mundo']</code>.</li><br>
+        <li><code>toUpperCase()</code>: Convierte todos los caracteres de la cadena a mayúsculas. Ejemplo: <code>"hola".toUpperCase()</code> devuelve <code>"HOLA"</code>.</li><br>
+        <li><code>substring(start, end)</code>: Devuelve una parte de la cadena entre los índices <code>start</code> y <code>end</code> (sin incluir <code>end</code>). Ejemplo: <code>"Hola, mundo".substring(0, 4)</code> devuelve <code>"Hola"</code>.</li><br>
+    </ul>
+    
+
+    <h2>4. ¿Qué es un condicional?</h2> <!-- Cuarta pregunta-->
+    <p>Un condicional es una estructura de control que permite ejecutar un bloque de código solo si se cumple una cierta condición. En JavaScript, se usa comúnmente la sentencia <code>if</code> para crear condicionales.</p>
+    <pre><code>let edad = 18;
+    if (edad >= 18) {
+        console.log("Eres mayor de edad");
+    } else {
+        console.log("Eres menor de edad");
+    }</code></pre>
+    <p>Además de la sentencia <code>if</code>, JavaScript ofrece otras formas de condicionales para manejar la lógica de control de flujo:</p>
+    
+    <h3>Sentencia <code>if...else if...else</code></h3>
+    <p>Permite evaluar múltiples condiciones de manera secuencial hasta que una de ellas sea verdadera. Si ninguna condición es verdadera, se ejecuta el bloque de código dentro del <code>else</code> final.</p>
+    <pre><code>let nota = 85;
+    if (nota >= 90) {
+        console.log("Excelente");
+    } else if (nota >= 70) {
+        console.log("Bueno");
+    } else if (nota >= 50) {
+        console.log("Aprobado");
+    } else {
+        console.log("Reprobado");
+    }</code></pre>
+    
+    <h3>Operador ternario</h3>
+    <p>Es una forma abreviada de la sentencia <code>if...else</code> que permite ejecutar una de dos expresiones basadas en una condición. Se utiliza el signo de interrogación (<code>?</code>) para separar la condición de las expresiones, y los dos puntos (<code>:</code>) para separar las dos expresiones.</p>
+    <pre><code>let edad = 18;
+    let mensaje = (edad >= 18) ? "Eres mayor de edad" : "Eres menor de edad";
+    console.log(mensaje);</code></pre>
+    
+    <h3>Sentencia <code>switch</code></h3>
+    <p>Permite seleccionar uno de varios bloques de código a ejecutar. Se evalúa una expresión una vez, y el valor de la expresión se compara con los valores de cada caso en la estructura <code>switch</code>. Si hay una coincidencia, se ejecuta el bloque de código correspondiente.</p>
+    <pre><code>let fruta = "manzana";
+    switch (fruta) {
+        case "manzana":
+            console.log("Es una manzana");
+            break;
+        case "naranja":
+            console.log("Es una naranja");
+            break;
+        case "plátano":
+            console.log("Es un plátano");
+            break;
+        default:
+            console.log("Fruta desconocida");
+    }</code></pre>
+    
+    <p>Estos diferentes tipos de condicionales permiten manejar de manera efectiva la lógica en los programas de JavaScript, asegurando que se ejecuten las acciones correctas en función de las condiciones evaluadas.</p>
+    
+
+    <h2>5. ¿Qué es un operador ternario?</h2> <!-- Quinta Pregunta-->
+    <p>Volviendo a la respuesta anterior, se puede definir el operador ternario como una forma concisa de escribir un condicional que asigna un valor basado en una condición. Es especialmente útil para simplificar estructuras <code>if...else</code> cortas. Tiene la siguiente sintaxis: <code>condición ? valorSiVerdadero : valorSiFalso</code>.</p>
+    <pre><code>let edad = 18;
+    let mensaje = edad >= 18 ? "Eres mayor de edad" : "Eres menor de edad";
+    console.log(mensaje);</code></pre>
+    <p>En el ejemplo anterior, si la condición <code>edad >= 18</code> es verdadera, se asigna "Eres mayor de edad" a <code>mensaje</code>. Si es falsa, se asigna "Eres menor de edad" a <code>mensaje</code>.</p>
+    <h3>Otro ejemplo de operador ternario</h3>
+    <p>Considera un escenario en el que necesitas verificar si un número es par o impar:</p>
+    <pre><code>let numero = 5;
+    let tipo = (numero % 2 === 0) ? "Par" : "Impar";
+    console.log(tipo);</code></pre>
+    <p>En este ejemplo, si la condición <code>numero % 2 === 0</code> es verdadera, se asigna "Par" a <code>tipo</code>. Si es falsa, se asigna "Impar" a <code>tipo</code>.</p>
+                
+    <h2>6. ¿Cuál es la diferencia entre una declaración de función y una expresión de función?</h2> <!-- Sexta Pregunta-->
+    <p>Tanto las declaraciones de función como las expresiones de función son mecanismos en JavaScript para crear bloques de código reutilizables. Sin embargo, existen diferencias sutiles en su funcionamiento y comportamiento que las hacen adecuadas para diferentes propósitos.</p>
+
+    <ol>
+        <li><b>Sintaxis:</b></li>
+            <ul>
+                <li><b>Declaraciones de función:</b>
+                    <ul>
+                    <li>Utilizan la palabra clave <code>function</code> seguida del nombre de la función, paréntesis () y llaves {} para el bloque de código.</li>
+                    <li>Ejemplo:<code>function saludar () {console.log("¡Hola!");}</code></li>
+                    </ul>
+                </li>
+
+                <li><b>Expresiónes de función:</b>
+                    <ul>
+                    <li>Se definen utilizando la palabra clave <code>const/let</code> seguida de un igual (=), paréntesis () y llaves {} para el bloque de código.</li>
+                    <li>Ejemplo: <code>function saludar () { console.log("¡Hola!"); }</code></li>
+                    </ul>
+                </li>
+            </ul>      
+  
+
+        <li><b>Hoisting (Elevación):</b></li>
+            <ul>
+                <li><b>Declaraciones de función:</b>
+                    <ul>
+                    <li>Son elevadas (hoisted) al inicio de su ámbito léxico durante la fase de compilación.</li>
+                    <li>Esto permite llamarlas antes de su definición en el código.</li>
+                    <li>Ejemplo: <code>saludar (); function saludar() {console.log ("¡Hola!"); }</code></li>
+                    </ul>
+                </li>
+                <li><b>Expresiones de función:</b>
+                    <ul>
+                    <li>No son elevadas.</li>
+                    <li>Deben definirse antes de ser llamadas.</li>
+                    <li>Ejemplo: <code>const saludar = function() { console.log ("¡Hola!"); }; saludar ();</code></li>
+                    </ul>
+                </li>
+            </ul>            
+   
+        <li><b>Ámbito:</b></li>
+            <ul>
+                <li><b>Declaraciones de función:</b>
+                    <ul>
+                    <li>Tienen un ámbito de función.</li>
+                    <li>Las variables declaradas dentro de la función solo son accesibles dentro de la misma.</li>
+                    </ul>
+                </li>    
+                <li><b>Expresiones de función</b>
+                    <ul>
+                    <li>Tienen un ámbito de bloque.</li>
+                    <li>Las variables declaradas dentro de la función son accesibles dentro del bloque en que se define la función.</li>
+                    </ul>
+                </li>
+            </ul>    
+        <li><b>Uso:</b></li>
+            <ul>
+                <li><b>Declaraciones de función:</b>
+                    <ul>
+                    <li>Se utilizan principalmente para definir funciones reutilizables que forman parte de la estructura principal del programa.</li>
+                    <li>Son útiles cuando se necesita llamar a la función antes de su definición.</li>
+                    </ul>
+                </li>
+                <li><b>Expresiones de función:</b></li>
+                    <ul>
+                    <li>Se utilizan para crear funciones anónimas o para asignar funciones a variables o constantes.</li>
+                    <li>Son útiles para encapsular código corto y específico o para pasarlo como argumuentos a otras funciones</li>
+                    </ul>
+                </li>   
+            </ul>     
+    </ol>     
+ 
+    <p><b>Declaración de función con parámetros:</b></p>
+    <pre><code>function saludar(nombre) {
+        console.log("Hola", nombre, "!");
+    }
+    saludar("Juan");  // Imprime: ¡Hola, Juan!</code></pre>
+    <p><b>Expresión de función como argumento:</b></p>
+    <pre><code>const suma= function(a, b) {
+            return a+b;
+    };
+    const resultado = suma(5,3); // resultado = 8 
+    </code></pre>
+    <p> Es recomendable utilizar declaraciones de función para definir las funciones principales del programa y las expresiones de función para funciones anónimas, encapsular código corto o pasarlo como argumentos.</p>
+        
+    <h2>7. ¿Qué es la palabra clave "this" en JavaScript?</h2> <!-- Septima Pregunta-->
+    <p>La palabra clave <code>this</code> en JavaScript se refiere al objeto en el que se encuentra actualmente. Su valor depende del contexto de ejecución en el que se utiliza:</p>
+    <ul>
+        <li>En un <b>método de objeto</b> cuando <code>this</code> se encuentra dentro de un método de un objeto, se refiere al objeto al que pertenece ese método.</li>
+            <pre><code>const objeto = {
+                nombre: "JavaScript",
+                mostrarNombre: function() {
+                    console.log(this.nombre);
+                    }
+                };
+                objeto.mostrarNombre();  // "JavaScript"</code></pre>
+                <p>Aqui, <code>this</code> dentro de <code>mostrarNombre</code> se refiere al objeto <code>objeto</code>, por lo que accede correctamente al valor de la propiedad <code>nombre</code>.</p>
+        <li>Si <code>this</code> se encuentra en una <b>función simple </b> (no asociada a un objeto), se refiere al objeto global ( en navegadores, generalmente el objeto <code>window</code>). Por ejemplo:</li>
+            <pre><code>function mostrarNombreGlobal() {
+                console.log(this.nombre)
+                }
+                mostrarNombreGlobal(); // Imprime el valor global de "nombre" 
+                (si está definido)</code></pre>
+        <li>En el contexto de <b> un evento </b> (como un clic de botón ), <code>this</code> se refiere al elemento HTML que recibe el evento. Por ejemplo:</li>
+            <pre><code>&lt;button id="miBoton"&gt;Haz clic&lt;/button&gt;
+                &lt;script&gt;
+                document.getElementById("miBoton").addEventListener("click", function() {
+                console.log(this.id); // Imprime "miBoton"
+                });
+            &lt;/script&gt;</code></pr>
+    </ul>
+    <p>En resumen, el valor de <code>this</code> depende del contexto en el que se encuentra y puede variar según cómo se llame la función.</p>
+
+
+</div>
+<!-- footer-->
+    <div class="footer">  
+        <div class="copyright-wrapper">&copy;2024 Ana Piñon &#124 all rights reserved</div>
+    </div>
+</body>
+</html>
+

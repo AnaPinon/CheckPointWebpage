@@ -1,0 +1,52 @@
+.links-wrapper {
+    width:200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links-wrapper .nav-link a {
+    font-family: "Ubuntu Condensed", sans-serif;
+    color: #cbcbcb;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.links-wrapper .nav-link a:hover {
+    color: #bfbcb7;
+    letter-spacing: 2px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.button-container a {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #bfbcb7; /* Color del fondo del botón */
+    color: black; /* Color del texto del botón */
+    font-family: "Ubuntu Condensed", sans-serif;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.button-container a:hover {
+    background-color:black; /* Color del fondo del botón al pasar el mouse */
+    letter-spacing: 2px; 
+    color: #bfbcb7;
+}
+
+.github a {
+    font-family: "Ubuntu Condensed", sans-serif;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+
+}
+
+.github a:hover {
+    color: grey;
+    letter-spacing: 2px;
+}
